@@ -1,4 +1,4 @@
-# Home_Service_Robot
+# Home_Service_Robot (Write Up)
 Welcome to my final project of the Nanodegree Program Robotic Sofware Engineer at Udacity. This project is a simulation of a "Home Service Robot" and its main purpose is to tell the robot to go to a Pick Up location to pick up an object and then go a Drop Off location to drop off the object. The software used to accomplish this project are ROS, Gazebo, Rviz in a Linux Ubuntu 18.04 with a ROS Kinetic distribution.
 
 

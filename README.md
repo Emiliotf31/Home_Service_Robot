@@ -23,3 +23,16 @@ The Monte Carlo Localazation (MCL) algorithm is broadly used for the localizatio
 Here you can find more about the [AMCL Algorithm for ROS](http://wiki.ros.org/amcl), as well as the whole parameters. 
 
 In order to move the robot one can use the "teleop_twist_keyboard" package, but for the purpose of this project I decided to use a "move_base" package to set a navigation goal position and to make it move to that position. This package is very useful to plan the trajectory, detect occupied or unoccupied areas as well as obstacles, and move the robot around if it gets stuck. Here you can find more about the [move_base package](http://wiki.ros.org/move_base). The [parameters of the "move_base"](https://github.com/Emiliotf31/Home_Service_Robot/tree/master/Home_Service_Project/my_robot/config) were tuned to get better results in following the path, the inflation zone and the speed of the robot, however, there are more things one can tuned.
+
+
+## Pick-Up and Drop-Off
+The main purpose of this project is divided into 4 actions:
+- Got to the Pick-Up location.
+- Pick up the object.
+- Got the Drop-Off location.
+- Drop off the object.
+
+The first and third actions are applied with the [pick_objects.cpp](https://github.com/Emiliotf31/Home_Service_Robot/blob/master/Home_Service_Project/pick_objects/src/pick_objects.cpp) node, meanwhile the second and fourth actions are applied with the [add_markers.cpp](https://github.com/Emiliotf31/Home_Service_Robot/blob/master/Home_Service_Project/add_markers/src/add_markers.cpp) file.
+
+First the add_markers.cpp node is called to place the object in the Pick-Up position and then the pick_object.cpp node is called to send to the robot the goal position and make navigate through the world. After the robot has reached the Pick-Up zone the parameter "pick-up" is set to true in the pick_object.cpp node and the add_markers.cpp node get the parameter "pick_up" to tru in order to delete or pick up the object. Hence the new position is sent to the robot as the Drop-Off location, once the robot has reached the location the parameter "drop_off" is set to true in the "pick_objects.cpp" node and the "add_markers.cpp" node get the parameter "drop_off" to true so the new object appears or is dropped off in the Drop-Off location.
+

@@ -5,7 +5,7 @@ Welcome to my final project of the Nanodegree Program Robotic Sofware Engineer a
 ## Brief Description of the Packages
 
 - *"my_robot"*: In this package one can find the information about the robot such as the description, the sensors used with its plugins and parameters. Also in the "launch" directory are the launch files such as the amcl.launch (explained below), mapping.launch, world.launch, and the configurations flaunch files for the different Rviz tests.
-- "map" has all the information abaout the world, yaml, db (must add the file form this link: https://drive.google.com/file/d/14I7nPg7WkIcz9Ma4G7WWIqwTRd1LCeHW/view?usp=sharing), and map information.
+- "map" has all the information abaout the world, yaml, db ([must add the file form this link](https://drive.google.com/file/d/14I7nPg7WkIcz9Ma4G7WWIqwTRd1LCeHW/view?usp=sharing)), and map information.
 - "rvizconfig" here are the configurations of the rviz corresponding to the different tasks (test_slam, test_navigation, home_service, etc.)
 - "teleop_twist_keyboard" was used just to move manually the robot for the SLAM test.
 - "scripts" contains all the shell scripts used in the different phases of the project. The most important is the home_service.sh file which runs the final project.

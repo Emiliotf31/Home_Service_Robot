@@ -12,7 +12,7 @@ Welcome to my final project of the Nanodegree Program Robotic Sofware Engineer a
 - *"add_markers"* and *"pick_objects"*: Both are packages that contains it corresponding nodes. The pick_objects node is responsible for the movement of the robot, whereas add_markers node is used for the visualization of the object. The connection between both nodes is with parameters. So depending on the state of the parameter of the pick_objects there will be an answer from the add_markers node.
 
 
-## Real-Time Appearanc-Based Mapping(RTAB-Map)
+## Real-Time Appearance-Based Mapping (RTAB-Map)
 This is a powerful algorithm to map the environment where the robot is situated.It is RGB-D, Stereo and Lidar Graph-Based SLAM and as it based on Graph SLAM it can solves the Full SLAM problem, which means the algorithm recovers the entire path and map. This algorithm is broadly used for dynamic environments, here is a link to understand more about [RTAB-Map for ROS](http://wiki.ros.org/rtabmap_ros).
 
 With the use of this package and its node, it can be possible to obtain a map of my world, so then it can be set as an input for the AMCL algorithm. The [mapping.launch](https://github.com/Emiliotf31/Home_Service_Robot/blob/master/Home_Service_Project/my_robot/launch/mapping.launch) file has everything the algo needs to work. The parameters set on this project worked perfectly fine with my robot and enviroment, however, one can tune this parameters to get better results.

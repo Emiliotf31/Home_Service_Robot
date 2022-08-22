@@ -23,9 +23,3 @@ The Monte Carlo Localazation (MCL) algorithm is broadly used for the localizatio
 Here you can find more about the [AMCL Algorithm for ROS](http://wiki.ros.org/amcl), as well as the whole parameters. 
 
 In order to move the robot one can use the "teleop_twist_keyboard" package, but for the purpose of this project I decided to use a "move_base" package to set a navigation goal position and to make it move to that position. This package is very useful to plan the trajectory, detect occupied or unoccupied areas as well as obstacles, and move the robot around if it gets stuck. Here you can find more about the [move_base package](http://wiki.ros.org/move_base). The [parameters of the "move_base"](https://github.com/Emiliotf31/Home_Service_Robot/tree/master/Home_Service_Project/my_robot/config) were tuned to get better results in following the path, the inflation zone and the speed of the robot, however, there are more things one can tuned.
-
-## Pick-Up and Drop-Off
-
-
-
-

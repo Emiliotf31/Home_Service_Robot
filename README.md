@@ -27,9 +27,9 @@ In order to move the robot one can use the "teleop_twist_keyboard" package, but 
 
 ## Pick-Up and Drop-Off
 The main purpose of this project is divided into 4 actions:
-- Got to the Pick-Up location.
+- Go to the Pick-Up location.
 - Pick up the object.
-- Got the Drop-Off location.
+- Go to the Drop-Off location.
 - Drop off the object.
 
 The first and third actions are applied with the [pick_objects.cpp](https://github.com/Emiliotf31/Home_Service_Robot/blob/master/Home_Service_Project/pick_objects/src/pick_objects.cpp) node, meanwhile the second and fourth actions are applied with the [add_markers.cpp](https://github.com/Emiliotf31/Home_Service_Robot/blob/master/Home_Service_Project/add_markers/src/add_markers.cpp) file.

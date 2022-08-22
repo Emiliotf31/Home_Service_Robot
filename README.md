@@ -1,10 +1,10 @@
 # Home_Service_Robot
-Final project of the Nanodegree Program as a Robotic Software Engineer. This a short WRITE UP about the project.
+Welcome to my final project of the Nanodegree Program Robotic Sofware Engineer at Udacity. This project is a simulation of a "Home Service Robot" and its main purpose is to tell the robot to go to a Pick Up location to pick up an object and then go a Drop Off location to drop off the object. The software used to accomplish this project are ROS, Gazebo, Rviz in a Linux Ubuntu 18.04 with a ROS Kinetic distribution.
 
 
 ## Brief Description of the Packages
 
-- *"my_robot"*: 
+- *"my_robot"*: In this package one can find the information about the robot such as the description and the plugins. 
 - "map" has all the information abaout the world, yaml, db (must add the file form this link: https://drive.google.com/file/d/14I7nPg7WkIcz9Ma4G7WWIqwTRd1LCeHW/view?usp=sharing), and map information.
 - "rvizconfig" here are the configurations of the rviz corresponding to the different tasks (test_slam, test_navigation, home_service, etc.)
 - "teleop_twist_keyboard" was used just to move manually the robot for the SLAM test.
